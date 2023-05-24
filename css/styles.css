@@ -193,7 +193,7 @@ p {
     letter-spacing: 0.02em;
 }
 
-.hero-button {
+.hero-btn {
     min-width: 169px;
     height: 56px;
     display: block;
@@ -213,8 +213,8 @@ p {
     transition: background-color var(--standart-anim);
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.hero-btn:hover,
+.hero-btn:focus {
     background-color: var(--color-ocean);
 }
 
@@ -475,7 +475,15 @@ p {
 .footer-container {
     display: flex;
     align-items: baseline;
-    gap: 120px;
+    /* gap: 120px; */
+}
+
+.footer-text {
+    margin-right: 120px;
+}
+
+.footer-social {
+    margin-right: 80px;
 }
 
 .footer-upper-icon {
@@ -544,6 +552,59 @@ p {
     line-height: 1.5;
     color: var(--color-cloud);
     max-width: 264px;
+}
+
+.footer-email-container {
+    position: relative;
+}
+
+.footer-email {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+
+    height: 40px;
+    width: 264px;
+    background-color: transparent;
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.subscribe-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 24px);
+    cursor: pointer;
+    height: 40px;
+    width: 165px;
+    padding: 0;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--color-white);
+
+    background: var(--color-iris);
+    border: 0;
+    border-radius: 4px;
+    transition: background-color var(--standart-anim);
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+    background-color: var(--color-ocean);
+}
+
+.subscribe-icon {
+    fill: var(--color-white);
 }
 
 /**
@@ -709,9 +770,9 @@ p {
 
 .modal {
     position: absolute;
-    transform: translate(-50%, -50%) scale(1);
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%) scale(1);
     width: 408px;
     min-height: 584px;
     background: #FCFCFC;
