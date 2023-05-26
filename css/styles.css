@@ -864,6 +864,7 @@ p {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+    color: var(--color-slate);
 }
 
 .modal-form-input {
@@ -883,6 +884,16 @@ p {
 
 .comment-text {
     height: 120px;
+    resize: none;
+    padding: 8px 16px;
+}
+
+.comment-text::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    /* color: rgba(46, 47, 66, 0.4); */
 }
 
 /* .modal-form-input:focus {
