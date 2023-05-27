@@ -569,6 +569,10 @@ p {
     color: var(--color-white);
 }
 
+.footer-email::placeholder {
+    color: var(--color-white);
+}
+
 /* .footer-email-container::after {
     pointer-events: none;
     content: 'Email';
