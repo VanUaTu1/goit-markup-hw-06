@@ -570,6 +570,7 @@ p {
 }
 
 /* .footer-email-container::after {
+    pointer-events: none;
     content: 'Email';
     position: absolute;
     bottom: 8px;
@@ -579,6 +580,11 @@ p {
     line-height: 2;
     letter-spacing: 0.04em;
     color: var(--color-white);
+}
+
+.footer-email:focus+.footer-email-container::after,
+.footer-email:focus-visible+.footer-email-container::after {
+    color: var(--color-navy-blue);
 } */
 
 .footer-email {
@@ -888,7 +894,7 @@ p {
     padding-left: 38px;
     border: 1px solid var(--color-navy-blue-modal);
     border-radius: 4px;
-    transition: border var(--standart-anim)
+    transition: border var(--standart-anim);
 }
 
 .modal-form-input:focus-visible,
@@ -968,6 +974,7 @@ p {
 }
 
 .modal-checkbox {
+    visibility: hidden;
     cursor: pointer;
     width: 16px;
     height: 16px;
